@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #efefef 0%, #9f9f9f 50%, #efefef 100%);
+  font-family: "Roboto", sans-serif;
+}
+
+nav.felso-navbar {
+  display: flex;
+  justify-content: center;
+  background: rgba(51, 51, 255, 0.6);
+  height: 50px;
+}
+nav.felso-navbar .felso-navbar-cim {
+  margin: 10px 0;
+}
+nav.felso-navbar .felso-navbar-cim h1 {
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: center;
+  background: #3333ff;
+  height: 80px;
+}
+nav.navbar a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  padding: 30px 16px;
+}
+nav.navbar a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+nav.navbar ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 30px auto;
+}
+nav.navbar ul li.has-submenu {
+  position: relative;
+}
+nav.navbar ul li.has-submenu:hover ul {
+  display: block;
+}
+nav.navbar ul li ul {
+  position: absolute;
+  display: none;
+  background: darkblue;
+  margin-top: 30px;
+  border-radius: 0 0 20px 20px;
+}
+nav.navbar ul li ul li {
+  width: 165px;
+  margin: 0;
+}
+nav.navbar ul li ul li a {
+  padding: 14px 16px;
+  display: block;
+  margin: 0;
+  font-size: 15px;
+}
+nav.navbar ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.kiiratas {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.left-content {
+  width: 100%;
+  padding: 1% 0 0 5%;
+}
+.center-content {
+  width: 100%;
+  padding: 15% 0 0 15%;
+}
+
+.right-content {
+  width: 100%;
+  padding: 15% 0 0 15%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  background: #404040;
+  width: 100%;
+  color: #fff;
+}
+
+footer p {
+  padding: 30px 0 0 0;
+  text-shadow: 2px 2px 3px #bfbfbf;
+}
+
+/*# sourceMappingURL=stlye.css.map */

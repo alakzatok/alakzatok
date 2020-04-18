@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kerület, terület, térfogat, felszín számítás</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="felso-navbar">
+      <div class="felso-navbar-cim">
+        <h1>Alakzatokkal kapcsolatos számítások</h1>
+      </div>
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#ffffff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#ffffff" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#ffffff" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+    </nav>
+    <nav class="navbar">
+      <ul>
+        <li class="has-submenu">
+          <a href="#">Síkidomok kerülete</a>
+          <ul>
+            <li>
+              <a href="#" class="btn-primary" onClick="negyzetKerulet()">
+                Négyzet
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onclick="teglalapKerulet()">
+                Téglalap
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onclick="haromszogKerulet()">
+                Háromszög
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="rombuszKerulet()">
+                Rombusz
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="paralelogrammaKerulet()">
+                Paralelogramma
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="deltoidKerulet()">
+                Deltoid
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="trapezKerulet()">
+                Trapéz
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="hurtrapezKerulet()">
+                Húrtrapéz
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="#">Síkidomok területe</a>
+          <ul>
+            <li>
+              <a href="#" class="btn-primary" onClick="negyzetTerulet()">
+                Négyzet
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onclick="teglalapTerulet()">
+                Téglalap
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onclick="haromszogTerulet()">
+                Háromszög
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="rombuszTeruletAtlo()">
+                Rombusz (átlókkal)
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-primary"
+                onClick="rombuszTeruletMagassag()"
+              >
+                Rombusz (magassággal)
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="paralelogrammaTerulet()">
+                Paralelogramma
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="deltoidTerulet()">
+                Deltoid
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="trapezTerulet()">
+                Trapéz/húrtrapéz
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="#">Testek térfogata</a>
+          <ul>
+            <li>
+              <a href="#" class="btn-primary" onClick="kockaTerfogat()">
+                Kocka
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="teglatestTerfogat()">
+                Téglatest
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-primary"
+                onClick="negyzetesOszlopTerfogat()"
+              >
+                Négyzetes oszlop
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-primary"
+                onclick="egyenesKorhengerTerfogat()"
+              >
+                Egyenes körhenger
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-primary"
+                onClick="negyzetAlapuSzabalyosGulaTerfogat()"
+              >
+                Négyzet alapú gúla
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="gombTerfogat()">Gömb</a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onclick="egyenesKorkupTerfogat()">
+                Egyenes körkúp
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="#" href="#">Testek felszíne</a>
+          <ul>
+            <li>
+              <a href="#" class="btn-primary" onClick="kockaFelszin()">
+                Kocka
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="teglatestFelszin()">
+                Téglatest
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-primary"
+                onClick="negyzetesOszlopFelszin()"
+              >
+                Négyzetes oszlop
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-primary"
+                onclick="egyenesKorhengerFelszin()"
+              >
+                Egyenes körhenger
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-primary"
+                onClick="negyzetAlapuSzabalyosGulaFelszin()"
+              >
+                Négyzet alapú gúla
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onClick="gombFelszin()">Gömb</a>
+            </li>
+            <li>
+              <a href="#" class="btn-primary" onclick="egyenesKorkupFelszin()">
+                Egyenes körkúp
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <ul id="side-menu" class="side-nav">
+      <li><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a></li>
+      <li><a href="#" class="dropbtn1" onClick="sideNavDropdown1()">Síkidomok kerülete<span>🢓</span></a>
+        <ul id="side-dropdown1" class="dropdown-content1">
+          <li><a href="#" onClick="negyzetKerulet()">Négyzet</a></li>
+          <li><a href="#" onClick="teglalapKerulet()">Téglalap</a></li>
+          <li><a href="#" onClick="haromszogKerulet()">Háromszög</a></li>
+          <li><a href="#" onClick="rombuszKerulet()">Rombusz</a></li>
+          <li><a href="#" onClick="paralelogrammaKerulet()">Paralelogramma</a></li>
+          <li><a href="#" onClick="deltoidKerulet()">Deltoid</a></li>
+          <li><a href="#" onClick="trapezKerulet()">Trapéz</a></li>
+          <li><a href="#" onClick="hurtrapezKerulet()">Húrtrapéz</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropbtn2" onClick="sideNavDropdown2()">Síkidomok területe<span>🢓</span></a>
+        <ul id="side-dropdown2" class="dropdown-content2">
+          <li><a href="#" onClick="negyzetTerulet()">Négyzet</a></li>
+          <li><a href="#" onClick="teglalapTerulet()">Téglalap</a></li>
+          <li><a href="#" onClick="haromszogTerulet()">Háromszög</a></li>
+          <li><a href="#" onClick="rombuszTeruletAtlo()">Rombusz (átlókkal)</a></li>
+          <li><a href="#" onClick="rombuszTeruletMagassag()">Rombusz (magassággal)</a></li>
+          <li><a href="#" onClick="paralelogrammaTerulet()">Paralelogramma</a></li>
+          <li><a href="#" onClick="deltoidTerulet()">Deltoid</a></li>
+          <li><a href="#" onClick="trapezTerulet()">Trapéz/húrtrapéz</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropbtn3" onClick="sideNavDropdown3()">Testek térfogata<span>🢓</span></a>
+        <ul id="side-dropdown3" class="dropdown-content3">
+          <li><a href="#" onClick="kockaTerfogat()">Kocka</a></li>
+          <li><a href="#" onClick="teglatestTerfogat()">Téglatest</a></li>
+          <li><a href="#" onClick="negyzetesOszlopTerfogat()">Négyzetes oszlop</a></li>
+          <li><a href="#" onClick="egyenesKorhengerTerfogat()">Egyenes körhenger</a></li>
+          <li><a href="#" onClick="negyzetAlapuSzabalyosGulaTerfogat()">Négyzet alapú gúla</a></li>
+          <li><a href="#" onClick="gombTerfogat()">Gömb</a></li>
+          <li><a href="#" onClick="egyenesKorkupTerfogat()">Egyenes körkúp</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropbtn4" onClick="sideNavDropdown4()">Testek felszíne<span>🢓</span></a>
+        <ul id="side-dropdown4" class="dropdown-content4">
+          <li><a href="#" onClick="kockaFelszin()">Kocka</a></li>
+          <li><a href="#" onClick="teglatestFelszin()">Téglatest</a></li>
+          <li><a href="#" onClick="negyzetesOszlopFelszin()">Négyzetes oszlop</a></li>
+          <li><a href="#" onClick="egyenesKorhengerFelszin()">Egyenes körhenger</a></li>
+          <li><a href="#" onClick="negyzetAlapuSzabalyosGulaFelszin()">Négyzet alapú gúla</a></li>
+          <li><a href="#" onClick="gombFelszin()">Gömb</a></li>
+          <li><a href="#" onClick="egyenesKorkupFelszin()">Egyenes körkúp</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="kiiratas" id="kiiratas">
+      <div id="left-content" class="left-content"><!-- ábra --></div>
+      <div id="center-content" class="center-content"><!-- kiíratás --></div>
+      <div id="right-content" class="right-content"><!--végeredmény--></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2020 Géczi Kornél</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@media (min-width: 890px) {
+    .open-slide {
+      display: none;
+    }
+
+    .side-nav{
+        display: none;
+    }
+}
+
+@media(max-width: 890px){
+    .kiiratas{
+        flex-wrap: wrap;
+    }
+
+    nav.felso-navbar{
+        justify-content: flex-end;
+
+        .felso-navbar-cim{
+            h1{
+                display: none;
+            }
+        }
+    }
+
+    nav.navbar{
+        display: none;
+    }
+}
