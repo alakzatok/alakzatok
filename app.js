@@ -2,6 +2,8 @@
 const leftDiv = document.getElementById("left-content");
 const centerDiv = document.getElementById("center-content");
 const rightDiv = document.getElementById("right-content");
+const sideMenu = document.getElementById("side-menu");
+const kiIratas = document.getElementById("kiiratas");
 
 function kiIrBal(szoveg) {
   const kiiratasBal = document.getElementById("left-content");
@@ -535,7 +537,6 @@ function gombFelszin() {
   kiIrKozep(`A=4 * r<sup>2</sup> * &Pi;`);
   kiIrKozep(`A=4 * ${sugar} * ${pi} cm=<span>${felszin} cm<sup>2</sup></span`);
   kiIrBal(`<img src="img/testek/gomb.png">`);
-  
 }
 
 function egyenesKorkupFelszin() {
@@ -559,11 +560,9 @@ function egyenesKorkupFelszin() {
 /* Side navbar */
 function openSlideMenu() {
   document.getElementById("side-menu").style.width = "250px";
-  document.getElementById("kiiratas").style.marginLeft = "250px";
 }
 function closeSlideMenu() {
   document.getElementById("side-menu").style.width = "0";
-  document.getElementById("kiiratas").style.marginLeft = "0";
 }
 
 /* Side nav dropdown */
@@ -616,6 +615,17 @@ window.onclick = function(event) {
 
   if (!event.target.matches('.dropbtn4')) {
     var dropdowns = document.getElementsByClassName("dropdown-content4");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  if (!event.target.matches('.btn-close')) {
+    var dropdowns = document.getElementsByClassName("side-nav");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];

@@ -91,6 +91,7 @@ nav.navbar ul::after {
   opacity: 0.9;
   overflow-x: hidden;
   padding-top: 60px;
+  display: block;
 }
 .side-nav li a span {
   position: absolute;
