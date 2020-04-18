@@ -10,7 +10,6 @@
     opacity: 0.9;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s;
 
     li{
         a{
@@ -48,7 +47,6 @@
         font-size: 22px;
         color: #ccc;
         display: block;
-        transition: 0.3s;
 
         &:hover{
             color: #fff;

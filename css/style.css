@@ -91,7 +91,6 @@ nav.navbar ul::after {
   opacity: 0.9;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
 }
 .side-nav li a span {
   position: absolute;
@@ -119,7 +118,6 @@ nav.navbar ul::after {
   font-size: 22px;
   color: #ccc;
   display: block;
-  transition: 0.3s;
 }
 .side-nav a:hover {
   color: #fff;
