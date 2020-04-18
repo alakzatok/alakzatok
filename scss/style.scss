@@ -40,13 +40,13 @@ nav.navbar {
       &.has-submenu {
         position: relative;
       }
-      &.has-submenu::after{
+      /*&.has-submenu::after{
         content: '🢓';
         color: #fff;
         position: absolute;
         top: 5px;
         right: 3px;
-      }
+      }*/
       &.has-submenu:hover {
         ul {
           display: block;

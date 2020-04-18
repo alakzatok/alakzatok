@@ -51,16 +51,16 @@ nav.navbar ul li {
   float: left;
   list-style: none;
   margin: 30px auto;
+  /*&.has-submenu::after{
+    content: '🢓';
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+  }*/
 }
 nav.navbar ul li.has-submenu {
   position: relative;
-}
-nav.navbar ul li.has-submenu::after {
-  content: "🢓";
-  color: #fff;
-  position: absolute;
-  top: 5px;
-  right: 3px;
 }
 nav.navbar ul li.has-submenu:hover ul {
   display: block;
