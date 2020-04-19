@@ -29,14 +29,24 @@ function negyzetKerulet() {
   centerDiv.innerHTML = "";
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a négyzet oldalát!");
-  oldal = Math.abs(oldal);
-  let kerulet = 4 * oldal;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzet kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=4a`);
-  kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
+  if(isNaN(oldal)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  }else if(oldal == 0 | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    let kerulet = 4 * oldal;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A négyzet kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=4a`);
+    kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
+  }
 }
 
 function teglalapKerulet() {
@@ -45,15 +55,25 @@ function teglalapKerulet() {
   rightDiv.innerHTML = "";
   let oldal1 = prompt("Add meg a téglalap egyik oldalát!");
   let oldal2 = prompt("Add meg a téglalap másik oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  let kerulet = 2 * (oldal1 + oldal2);
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglalap kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=2(a+b)`);
-  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
+  if(isNaN(oldal1) | isNaN(oldal2)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    let kerulet = 2 * (oldal1 + oldal2);
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A téglalap kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=2(a+b)`);
+    kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
+  }
 }
 
 function haromszogKerulet() {
@@ -63,16 +83,26 @@ function haromszogKerulet() {
   let oldal1 = prompt("Add meg a háromszög 'a' oldalát!");
   let oldal2 = prompt("Add meg a háromszög 'b' oldalát!");
   let oldal3 = prompt("Add meg a háromszög 'c' oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  oldal3 = Math.abs(oldal3);
-  let kerulet = oldal1 + oldal2 + oldal3;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A háromszög kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=a+b+c`);
-  kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3} cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
+  if(isNaN(oldal1) | isNaN(oldal2) | isNaN(oldal3)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    oldal3 = Math.abs(oldal3);
+    let kerulet = oldal1 + oldal2 + oldal3;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A háromszög kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=a+b+c`);
+    kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3} cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
+  }
 }
 
 function rombuszKerulet() {
@@ -80,14 +110,24 @@ function rombuszKerulet() {
   centerDiv.innerHTML = "";
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a rombusz oldalát!");
-  oldal = Math.abs(oldal);
-  let kerulet = 4 * oldal;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A rombusz kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=4a`);
-  kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+  if(isNaN(oldal)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else{
+    oldal = Math.abs(oldal);
+    let kerulet = 4 * oldal;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A rombusz kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=4a`);
+    kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+  }
 }
 
 function paralelogrammaKerulet() {
@@ -96,15 +136,25 @@ function paralelogrammaKerulet() {
   rightDiv.innerHTML = "";
   let oldal1 = prompt("Add meg a paralelogramma egyik oldalát!");
   let oldal2 = prompt("Add meg a paralelogramma másik oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  let kerulet = 2 * (oldal1 + oldal2);
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A paralelogramma kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=2(a+b)`);
-  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
+  if(isNaN(oldal1) | isNaN(oldal2)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    let kerulet = 2 * (oldal1 + oldal2);
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A paralelogramma kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=2(a+b)`);
+    kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
+  }
 }
 
 function deltoidKerulet() {
@@ -113,15 +163,25 @@ function deltoidKerulet() {
   rightDiv.innerHTML = "";
   let oldal1 = prompt("Add meg a deltoid egyik oldalát!");
   let oldal2 = prompt("Add meg a deltoid másik oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  let kerulet = 2 * (oldal1 + oldal2);
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A deltoid kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=2(a+b)`);
-  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
+  if(isNaN(oldal1) | isNaN(oldal2)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  }else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    let kerulet = 2 * (oldal1 + oldal2);
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A deltoid kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=2(a+b)`);
+    kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
+  }
 }
 
 function trapezKerulet() {
@@ -132,17 +192,27 @@ function trapezKerulet() {
   let oldal2 = prompt("Add meg a trapéz másik oldalát!");
   let oldal3 = prompt("Add meg a trapéz harmadik oldalát!");
   let oldal4 = prompt("Add meg a trapéz negyedik oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  oldal3 = Math.abs(oldal3);
-  oldal4 = Math.abs(oldal4);
-  let kerulet = oldal1 + oldal2 + oldal3 + oldal4;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A trapéz kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=a+b+c+d`);
-  kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3}+${oldal4} cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/trapez.png">`);
+  if(isNaN(oldal1) | isNaN(oldal2) | isNaN(oldal3) | isNaN(oldal4)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal4 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == "" | oldal4 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    oldal3 = Math.abs(oldal3);
+    oldal4 = Math.abs(oldal4);
+    let kerulet = oldal1 + oldal2 + oldal3 + oldal4;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A trapéz kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=a+b+c+d`);
+    kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3}+${oldal4} cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/trapez.png">`);
+  }
 }
 
 function hurtrapezKerulet() {
@@ -152,16 +222,26 @@ function hurtrapezKerulet() {
   let oldal1 = prompt("Add meg a húrtrapéz egyik alapját!");
   let oldal2 = prompt("Add meg a húrtrapéz másik alapját!");
   let oldal3 = prompt("Add meg a húrtrapéz szárát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  oldal3 = Math.abs(oldal3);
-  let kerulet = oldal1 + oldal2 + 2 * oldal3;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A húrtrapéz kerülete: <span>${kerulet} cm</span>`);
-  kiIrKozep(`K=a+b+c+2*d`);
-  kiIrKozep(`K=${oldal1}+${oldal2}+2*${oldal3} cm=<span>${kerulet} cm</span>`);
-  kiIrBal(`<img src="img/sikidomok/hurtrapez.png">`);
+  if(isNaN(oldal1) | isNaN(oldal2) | isNaN(oldal3)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    oldal3 = Math.abs(oldal3);
+    let kerulet = oldal1 + oldal2 + 2 * oldal3;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A húrtrapéz kerülete: <span>${kerulet} cm</span>`);
+    kiIrKozep(`K=a+b+c+2*d`);
+    kiIrKozep(`K=${oldal1}+${oldal2}+2*${oldal3} cm=<span>${kerulet} cm</span>`);
+    kiIrBal(`<img src="img/sikidomok/hurtrapez.png">`);
+  }
 }
 
 // Síkidomok területe
@@ -170,14 +250,24 @@ function negyzetTerulet() {
   centerDiv.innerHTML = "";
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a négyzet oldalát!");
-  oldal = Math.abs(oldal);
-  let terulet = Math.pow(oldal, 2);
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzet területe: <span>${terulet} cm<sup>2</sup></span>`);
-  kiIrKozep(`T=a*a`);
-  kiIrKozep(`T=${oldal}*${oldal} cm=<span>${terulet} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
+  if(isNaN(oldal)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagoybb számot adjon meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    let terulet = Math.pow(oldal, 2);
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A négyzet területe: <span>${terulet} cm<sup>2</sup></span>`);
+    kiIrKozep(`T=a*a`);
+    kiIrKozep(`T=${oldal}*${oldal} cm=<span>${terulet} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
+  }
 }
 
 function teglalapTerulet() {
@@ -186,15 +276,25 @@ function teglalapTerulet() {
   rightDiv.innerHTML = "";
   let oldal1 = prompt("Add meg a téglalap egyik oldalát!");
   let oldal2 = prompt("Add meg a téglalap másik oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  let terulet = oldal1 * oldal2;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglalap területe: <span>${terulet} cm<sup>2</sup></span>`);
-  kiIrKozep(`T=a*b`);
-  kiIrKozep(`T=${oldal1}*${oldal2} cm=<span>${terulet} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
+  if(isNaN(oldal1) | isNaN(oldal2)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    let terulet = oldal1 * oldal2;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A téglalap területe: <span>${terulet} cm<sup>2</sup></span>`);
+    kiIrKozep(`T=a*b`);
+    kiIrKozep(`T=${oldal1}*${oldal2} cm=<span>${terulet} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
+  }
 }
 
 function haromszogTerulet() {
@@ -203,15 +303,25 @@ function haromszogTerulet() {
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a háromszög egyik oldalát!");
   let magassag = prompt("Add meg az oldalhoz tartozó magasságot!");
-  oldal = Math.abs(oldal);
-  magassag = Math.abs(magassag);
-  let terulet = (oldal * magassag) / 2;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A háromszög területe: <span>${terulet} cm<sup>2<sup></span>`);
-  kiIrKozep(`T=(a*m<sub>a</sub>)/2`);
-  kiIrKozep(`T=(${oldal}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
+  if(isNaN(oldal) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    magassag = Math.abs(magassag);
+    let terulet = (oldal * magassag) / 2;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A háromszög területe: <span>${terulet} cm<sup>2<sup></span>`);
+    kiIrKozep(`T=(a*m<sub>a</sub>)/2`);
+    kiIrKozep(`T=(${oldal}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
+  }
 }
 
 function rombuszTeruletAtlo() {
@@ -220,15 +330,25 @@ function rombuszTeruletAtlo() {
   rightDiv.innerHTML = "";
   let atlo1 = prompt("Add meg a rombusz egyik átlóját!");
   let atlo2 = prompt("Add meg a rombusz másik átlóját!");
-  atlo1 = Math.abs(atlo1);
-  atlo2 = Math.abs(atlo2);
-  let terulet = (atlo1 * atlo2) / 2;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
-  kiIrKozep(`T=(e*f)/2`);
-  kiIrKozep(`T=(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+  if(isNaN(atlo1) | isNaN(atlo2)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(atlo1 == 0 | atlo2 == 0 | atlo1 == "" | atlo2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else{
+    atlo1 = Math.abs(atlo1);
+    atlo2 = Math.abs(atlo2);
+    let terulet = (atlo1 * atlo2) / 2;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
+    kiIrKozep(`T=(e*f)/2`);
+    kiIrKozep(`T=(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+  }
 }
 
 function rombuszTeruletMagassag() {
@@ -237,15 +357,25 @@ function rombuszTeruletMagassag() {
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a rombusz egyik oldalát!");
   let magassag = prompt("Add meg az oldalhoz tartozó magasságot!");
-  oldal = Math.abs(oldal);
-  magassag = Math.abs(magassag);
-  let terulet = oldal * magassag;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
-  kiIrKozep(`T=a*m<sub>a</sub>`);
-  kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+  if(isNaN(oldal) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    magassag = Math.abs(magassag);
+    let terulet = oldal * magassag;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
+    kiIrKozep(`T=a*m<sub>a</sub>`);
+    kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+  }
 }
 
 function paralelogrammaTerulet() {
@@ -254,15 +384,25 @@ function paralelogrammaTerulet() {
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a rombusz egyik oldalát!");
   let magassag = prompt("Add meg az oldalhoz tartozó magasságot!");
-  oldal = Math.abs(oldal);
-  magassag = Math.abs(magassag);
-  let terulet = oldal * magassag;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A paralelogramma területe: <span>${terulet} cm<sup>2</sup></span>`);
-  kiIrKozep(`T=a*m<sub>a</sub>`);
-  kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
+  if(isNaN(oldal) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    magassag = Math.abs(magassag);
+    let terulet = oldal * magassag;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A paralelogramma területe: <span>${terulet} cm<sup>2</sup></span>`);
+    kiIrKozep(`T=a*m<sub>a</sub>`);
+    kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
+  }
 }
 
 function deltoidTerulet() {
@@ -271,15 +411,25 @@ function deltoidTerulet() {
   rightDiv.innerHTML = "";
   let atlo1 = prompt("Add meg a deltoid egyik átlóját!");
   let atlo2 = prompt("Add meg a deltoid másik átlóját!");
-  atlo1 = Math.abs(atlo1);
-  atlo2 = Math.abs(atlo2);
-  let terulet = (atlo1 * atlo2) / 2;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A deltoid területe: <span>${terulet} cm<sup>2</sup></span>`);
-  kiIrKozep(`T=(e*f)/2`);
-  kiIrKozep(`T=$(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
+  if(isNaN(atlo1) | isNaN(atlo2)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(atlo1 == 0 | atlo2 == 0 | atlo1 == "" | atlo2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    atlo1 = Math.abs(atlo1);
+    atlo2 = Math.abs(atlo2);
+    let terulet = (atlo1 * atlo2) / 2;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A deltoid területe: <span>${terulet} cm<sup>2</sup></span>`);
+    kiIrKozep(`T=(e*f)/2`);
+    kiIrKozep(`T=$(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
+  }
 }
 
 function trapezTerulet() {
@@ -289,18 +439,28 @@ function trapezTerulet() {
   let alap1 = prompt("Add meg a trapéz egyik alapját!");
   let alap2 = prompt("Add meg a trapéz másik alapját!");
   let magassag = prompt("Add meg az alapokhoz tartozó magasságot!");
-  alap1 = Math.abs(alap1);
-  alap2 = Math.abs(alap2);
-  magassag = Math.abs(magassag);
-  let terulet = ((alap1 + alap2) / 2) * magassag;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A trapéz területe: <span>${terulet} cm<sup>2</sup></span>`);
-  kiIrKozep(`T=(a+c*m)/2`);
-  kiIrKozep(
-    `T=(${alap1}+${alap2}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`
-  );
-  kiIrBal(`<img src="img/sikidomok/trapez.png">`);
+  if(isNaN(alap1) | isNaN(alap2) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(alap1 == 0 | alap2 == 0 | magassag == 0 | alap1 == "" | alap2 == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    alap1 = Math.abs(alap1);
+    alap2 = Math.abs(alap2);
+    magassag = Math.abs(magassag);
+    let terulet = ((alap1 + alap2) / 2) * magassag;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A trapéz területe: <span>${terulet} cm<sup>2</sup></span>`);
+    kiIrKozep(`T=(a+c*m)/2`);
+    kiIrKozep(
+      `T=(${alap1}+${alap2}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`
+    );
+    kiIrBal(`<img src="img/sikidomok/trapez.png">`);
+  }
 }
 
 // Testek térfogata
@@ -309,14 +469,24 @@ function kockaTerfogat() {
   centerDiv.innerHTML = "";
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a négyzet oldalát!");
-  oldal = Math.abs(oldal);
-  let terfogat = Math.pow(oldal, 3);
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A kocka térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrKozep(`V=a<sup>3</sup>`);
-  kiIrKozep(`V=${oldal}<sup>3</sup> cm=<span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrBal(`<img src="img/testek/kocka.png">`);
+  if(isNaN(oldal)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    let terfogat = Math.pow(oldal, 3);
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A kocka térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrKozep(`V=a<sup>3</sup>`);
+    kiIrKozep(`V=${oldal}<sup>3</sup> cm=<span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrBal(`<img src="img/testek/kocka.png">`);
+  }
 }
 
 function teglatestTerfogat() {
@@ -326,16 +496,26 @@ function teglatestTerfogat() {
   let oldal1 = prompt("Add meg a téglatest oldalát!");
   let oldal2 = prompt("Add meg a másik oldalát!");
   let oldal3 = prompt("Add meg a harmadik oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  oldal3 = Math.abs(oldal3);
-  let terfogat = oldal1 * oldal2 * oldal3;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglatest térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrKozep(`V=abc`);
-  kiIrKozep(`V=${oldal1}*${oldal2}*${oldal3} cm=<span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrBal(`<img src="img/testek/teglatest.gif">`);
+  if(isNaN(oldal1) | isNaN(oldal2) | isNaN(oldal3)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    oldal3 = Math.abs(oldal3);
+    let terfogat = oldal1 * oldal2 * oldal3;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A téglatest térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrKozep(`V=abc`);
+    kiIrKozep(`V=${oldal1}*${oldal2}*${oldal3} cm=<span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrBal(`<img src="img/testek/teglatest.gif">`);
+  }
 }
 
 function negyzetesOszlopTerfogat() {
@@ -344,15 +524,25 @@ function negyzetesOszlopTerfogat() {
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a négyzetes oszlop oldalát!");
   let magassag = prompt("Add meg a négyzetes oszlop magasságát!");
-  oldal = Math.abs(oldal);
-  magassag = Math.abs(magassag);
-  let terfogat = Math.pow(oldal, 2) * magassag;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzetes oszlop térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrKozep(`V=a<sup>2</sup>*m`);
-  kiIrKozep(`V=${oldal}<sup>2</sup>*${magassag} cm=<span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
+  if(isNaN(oldal) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    magassag = Math.abs(magassag);
+    let terfogat = Math.pow(oldal, 2) * magassag;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A négyzetes oszlop térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrKozep(`V=a<sup>2</sup>*m`);
+    kiIrKozep(`V=${oldal}<sup>2</sup>*${magassag} cm=<span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
+  }
 }
 
 function egyenesKorhengerTerfogat() {
@@ -362,17 +552,27 @@ function egyenesKorhengerTerfogat() {
   let sugar = prompt("Add meg a henger körének a sugarát!");
   const pi = 3.14;
   let magassag = prompt("Add meg a henger magasságát!");
-  sugar = Math.abs(sugar);
-  magassag = Math.abs(magassag);
-  let terfogat = Math.pow(sugar, 2) * pi * magassag;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`Az egyenes körhenger térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrKozep(`V=r<sup>2</sup> * &Pi; * m`);
-  kiIrKozep(
-    `V=${sugar}<sup>2</sup> * ${pi} * ${magassag}cm=<span>${terfogat} cm<sup>3</sup></span>`
-  );
-  kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
+  if(isNaN(sugar) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(sugar == 0 | magassag == 0 | sugar == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    sugar = Math.abs(sugar);
+    magassag = Math.abs(magassag);
+    let terfogat = Math.pow(sugar, 2) * pi * magassag;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`Az egyenes körhenger térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrKozep(`V=r<sup>2</sup> * &Pi; * m`);
+    kiIrKozep(
+      `V=${sugar}<sup>2</sup> * ${pi} * ${magassag}cm=<span>${terfogat} cm<sup>3</sup></span>`
+    );
+    kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
+  }
 }
 
 function negyzetAlapuSzabalyosGulaTerfogat() {
@@ -381,19 +581,29 @@ function negyzetAlapuSzabalyosGulaTerfogat() {
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a gúla négyzetének az oldalát!");
   let magassag = prompt("Add meg a gúla magasságát!");
-  oldal = Math.abs(oldal);
-  magassag = Math.abs(magassag);
-  let terfogat = (Math.pow(oldal, 2) * magassag) / 3;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(
-    `A négyzet alapú szabályos gúla térfogata: <span>${terfogat} cm<sup>3</sup></span>`
-  );
-  kiIrKozep(`V=(a<sup>2</sup> * m)/3`);
-  kiIrKozep(
-    `V=(${oldal}<sup>2</sup> * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
-  );
-  kiIrBal(`<img src="img/testek/gula.gif">`);
+  if (isNaN(oldal) | isNaN(magassag)) {
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    magassag = Math.abs(magassag);
+    let terfogat = (Math.pow(oldal, 2) * magassag) / 3;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(
+      `A négyzet alapú szabályos gúla térfogata: <span>${terfogat} cm<sup>3</sup></span>`
+    );
+    kiIrKozep(`V=(a<sup>2</sup> * m)/3`);
+    kiIrKozep(
+      `V=(${oldal}<sup>2</sup> * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
+    );
+    kiIrBal(`<img src="img/testek/gula.gif">`);
+  }
 }
 
 function gombTerfogat() {
@@ -402,14 +612,24 @@ function gombTerfogat() {
   rightDiv.innerHTML = "";
   let sugar = prompt("Add meg a gömb sugarát!");
   const pi = 3.14;
-  sugar = Math.abs(sugar);
-  let terfogat = (4 * Math.pow(sugar, 3) * pi) / 3;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A gömb térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrKozep(`V=(4r<sup>3</sup> * &Pi;)/3`);
-  kiIrKozep(`V=(${sugar}<sup>3</sup> * ${pi} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrBal(`<img src="img/testek/gomb.png">`);
+  if(isNaN(sugar)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(sugar == 0 | sugar == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    sugar = Math.abs(sugar);
+    let terfogat = (4 * Math.pow(sugar, 3) * pi) / 3;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A gömb térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrKozep(`V=(4r<sup>3</sup> * &Pi;)/3`);
+    kiIrKozep(`V=(${sugar}<sup>3</sup> * ${pi} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrBal(`<img src="img/testek/gomb.png">`);
+  }
 }
 
 function egyenesKorkupTerfogat() {
@@ -419,17 +639,27 @@ function egyenesKorkupTerfogat() {
   let sugar = prompt("Add meg a kúp körének a sugarát!");
   const pi = 3.14;
   let magassag = prompt("Add meg a kúp magasságát!");
-  sugar = Math.abs(sugar);
-  magassag = Math.abs(sugar);
-  let terfogat = (Math.pow(sugar, 2) * pi * magassag) / 3;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A kúp térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
-  kiIrKozep(`V=(r<sup>2</sup> * &Pi; * m)/3`);
-  kiIrKozep(
-    `V=(${sugar}<sup>2</sup> * ${pi} * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
-  );
-  kiIrBal(`<img src="img/testek/kup.gif">`);
+  if(isNaN(sugar) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(sugar == 0 | magassag == 0 | sugar == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    sugar = Math.abs(sugar);
+    magassag = Math.abs(sugar);
+    let terfogat = (Math.pow(sugar, 2) * pi * magassag) / 3;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A kúp térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
+    kiIrKozep(`V=(r<sup>2</sup> * &Pi; * m)/3`);
+    kiIrKozep(
+      `V=(${sugar}<sup>2</sup> * ${pi} * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
+    );
+    kiIrBal(`<img src="img/testek/kup.gif">`);
+  }
 }
 
 // Testek felszíne
@@ -438,14 +668,24 @@ function kockaFelszin() {
   centerDiv.innerHTML = "";
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a négyzet oldalát!");
-  oldal = Math.abs(oldal);
-  let felszin = 6 * Math.pow(oldal, 2);
-  kiIrJobb(`A kocka felszíne: <span>${felszin} cm<sup>2</sup></span>`);
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrKozep(`A=6a<sup>2</sup>`);
-  kiIrKozep(`A=6*${oldal}<sup>2</sup> cm=<span>${felszin} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/testek/kocka.png">`);
+  if(isNaN(oldal)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{     
+    oldal = Math.abs(oldal);
+    let felszin = 6 * Math.pow(oldal, 2);
+    kiIrJobb(`A kocka felszíne: <span>${felszin} cm<sup>2</sup></span>`);
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrKozep(`A=6a<sup>2</sup>`);
+    kiIrKozep(`A=6*${oldal}<sup>2</sup> cm=<span>${felszin} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/testek/kocka.png">`);
+  }
 }
 
 function teglatestFelszin() {
@@ -455,16 +695,26 @@ function teglatestFelszin() {
   let oldal1 = prompt("Add meg a téglatest egyik oldalát!");
   let oldal2 = prompt("Add meg a téglatest másik oldalát!");
   let oldal3 = prompt("Add meg a téglatest harmadik oldalát!");
-  oldal1 = Math.abs(oldal1);
-  oldal2 = Math.abs(oldal2);
-  oldal3 = Math.abs(oldal3);
-  let felszin = 2 * (oldal1 * oldal2 + oldal2 * oldal3 + oldal1 * oldal3);
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglatest felszíne: <span>${felszin} cm<sup>2</sup></span>`);
-  kiIrKozep(`A=2(ab+bc+ac)`);
-  kiIrKozep(`A=2*(${oldal1} * ${oldal2} + ${oldal2} * ${oldal3} + ${oldal1} * ${oldal3}) cm=<span>${felszin} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/testek/teglatest.gif">`);
+  if(isNaN(oldal1) | isNaN(oldal2) | isNaN(oldal3)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else {
+    oldal1 = Math.abs(oldal1);
+    oldal2 = Math.abs(oldal2);
+    oldal3 = Math.abs(oldal3);
+    let felszin = 2 * (oldal1 * oldal2 + oldal2 * oldal3 + oldal1 * oldal3);
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A téglatest felszíne: <span>${felszin} cm<sup>2</sup></span>`);
+    kiIrKozep(`A=2(ab+bc+ac)`);
+    kiIrKozep(`A=2*(${oldal1} * ${oldal2} + ${oldal2} * ${oldal3} + ${oldal1} * ${oldal3}) cm=<span>${felszin} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/testek/teglatest.gif">`);
+  }
 }
 
 function negyzetesOszlopFelszin() {
@@ -473,15 +723,25 @@ function negyzetesOszlopFelszin() {
   rightDiv.innerHTML = "";
   let oldal = prompt("Add meg a négyzetes oszlop oldalát!");
   let magassag = prompt("Add meg a négyzetes oszlop magasságát!");
-  oldal = Math.abs(oldal);
-  magassag = Math.abs(magassag);
-  let felszin = 2 * Math.pow(oldal, 2) + 4 * oldal * magassag;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzetes oszlop felszíne: <span>${felszin} cm<sup>2</sup></span>`);
-  kiIrKozep(`A=2a<sup>2</sup> + 4am`);
-  kiIrKozep(`A=2*${oldal}<sup>2</sup> + 4*${oldal}*${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
+  if(isNaN(oldal) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal = Math.abs(oldal);
+    magassag = Math.abs(magassag);
+    let felszin = 2 * Math.pow(oldal, 2) + 4 * oldal * magassag;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A négyzetes oszlop felszíne: <span>${felszin} cm<sup>2</sup></span>`);
+    kiIrKozep(`A=2a<sup>2</sup> + 4am`);
+    kiIrKozep(`A=2*${oldal}<sup>2</sup> + 4*${oldal}*${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
+  }
 }
 
 function egyenesKorhengerFelszin() {
@@ -491,15 +751,25 @@ function egyenesKorhengerFelszin() {
   let sugar = prompt("Add meg a henger körének a sugarát!");
   let magassag = prompt("Add meg a henger magasságát!");
   const pi = 3.14;
-  sugar = Math.abs(sugar);
-  magassag = Math.abs(magassag);
-  let felszin = 2 * Math.pow(sugar, 2) * pi + 2 * sugar * pi * magassag;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`Az egyenes körhenger felszíne: <span>${felszin} cm<sup>2</sup></span>`);
-  kiIrKozep(`A=2 * r<sup>2</sup> * &Pi; + 2 * r * &Pi; * m`);
-  kiIrKozep(`A=2*${sugar}<sup>2</sup> * ${pi} + 2 * ${sugar} * ${pi} * ${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
+  if(isNaN(sugar) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(sugar == 0 | magassag == 0 | sugar == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    sugar = Math.abs(sugar);
+    magassag = Math.abs(magassag);
+    let felszin = 2 * Math.pow(sugar, 2) * pi + 2 * sugar * pi * magassag;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`Az egyenes körhenger felszíne: <span>${felszin} cm<sup>2</sup></span>`);
+    kiIrKozep(`A=2 * r<sup>2</sup> * &Pi; + 2 * r * &Pi; * m`);
+    kiIrKozep(`A=2*${sugar}<sup>2</sup> * ${pi} + 2 * ${sugar} * ${pi} * ${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
+  }
 }
 
 function negyzetAlapuSzabalyosGulaFelszin() {
@@ -510,15 +780,25 @@ function negyzetAlapuSzabalyosGulaFelszin() {
   let magassag = prompt(
     "Add meg az alaphoz tartozó magasságot!"
   );
-  oldal1 = Math.abs(oldal1);
-  magassag = Math.abs(magassag);
-  let felszin = Math.pow(oldal1, 2) + 4 * (oldal1*magassag) / 2;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A gúla felszíne: <span>${felszin} cm<sup>2</sup></span>`);
-  kiIrKozep(`A=a<sup>2</sup> + 4 * (a * m<sub>a</sub>) / 2`);
-  kiIrKozep(`A=${oldal1}<sup>2</sup> + (4 * ${oldal1} * ${magassag}) / 2 cm=<span>${felszin} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/testek/gula.gif">`);
+  if(isNaN(oldal1) | isNaN(magassag)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(oldal1 == 0 | magassag == 0 | oldal1 == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    oldal1 = Math.abs(oldal1);
+    magassag = Math.abs(magassag);
+    let felszin = Math.pow(oldal1, 2) + 4 * (oldal1*magassag) / 2;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A gúla felszíne: <span>${felszin} cm<sup>2</sup></span>`);
+    kiIrKozep(`A=a<sup>2</sup> + 4 * (a * m<sub>a</sub>) / 2`);
+    kiIrKozep(`A=${oldal1}<sup>2</sup> + (4 * ${oldal1} * ${magassag}) / 2 cm=<span>${felszin} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/testek/gula.gif">`);
+  }
 }
 
 function gombFelszin() {
@@ -527,14 +807,24 @@ function gombFelszin() {
   rightDiv.innerHTML = "";
   let sugar = prompt("Add meg a gömb sugarát!");
   const pi = 3.14;
-  sugar = Math.abs(sugar);
-  let felszin = 4 * Math.pow(sugar, 2) * pi;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A gömb felszíne: <span>${felszin} cm<sup>2</sup></span>`);
-  kiIrKozep(`A=4 * r<sup>2</sup> * &Pi;`);
-  kiIrKozep(`A=4 * ${sugar} * ${pi} cm=<span>${felszin} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/testek/gomb.png">`);
+  if(isNaN(sugar)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(sugar == 0 | sugar == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    sugar = Math.abs(sugar);
+    let felszin = 4 * Math.pow(sugar, 2) * pi;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A gömb felszíne: <span>${felszin} cm<sup>2</sup></span>`);
+    kiIrKozep(`A=4 * r<sup>2</sup> * &Pi;`);
+    kiIrKozep(`A=4 * ${sugar} * ${pi} cm=<span>${felszin} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/testek/gomb.png">`);
+  }
 }
 
 function egyenesKorkupFelszin() {
@@ -544,15 +834,25 @@ function egyenesKorkupFelszin() {
   let atfogo = prompt("Add meg a kúp 'a' oldalát!");
   let sugar = prompt("Add meg a kúp körének a sugarát!");
   const pi = 3.14;
-  atfogo = Math.abs(atfogo);
-  sugar = Math.abs(sugar);
-  let felszin = Math.pow(sugar, 2) * pi + sugar * pi * atfogo;
-  leftDiv.style.borderRight = "1px solid #000";
-  centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A kúp felszíne: <span>${felszin} cm<sup>2</sup></span>`);
-  kiIrKozep(`A=r<sup>2</sup> * &Pi; + r * &Pi; * a`);
-  kiIrKozep(`A=${sugar}<sup>2</sup> * ${pi} + ${sugar} * ${pi} * ${atfogo}cm=<span>${felszin} cm<sup>2</sup></span>`);
-  kiIrBal(`<img src="img/testek/kup.gif">`);
+  if(isNaN(atfogo) | isNaN(sugar)){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek számot adjál meg!");
+  } else if(atfogo == 0 | sugar == 0 | atfogo == "" | sugar == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else{
+    atfogo = Math.abs(atfogo);
+    sugar = Math.abs(sugar);
+    let felszin = Math.pow(sugar, 2) * pi + sugar * pi * atfogo;
+    leftDiv.style.borderRight = "1px solid #000";
+    centerDiv.style.borderRight = "1px solid #000";
+    kiIrJobb(`A kúp felszíne: <span>${felszin} cm<sup>2</sup></span>`);
+    kiIrKozep(`A=r<sup>2</sup> * &Pi; + r * &Pi; * a`);
+    kiIrKozep(`A=${sugar}<sup>2</sup> * ${pi} + ${sugar} * ${pi} * ${atfogo}cm=<span>${felszin} cm<sup>2</sup></span>`);
+    kiIrBal(`<img src="img/testek/kup.gif">`);
+  }
 }
 
 /* Side navbar */
