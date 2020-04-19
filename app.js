@@ -33,9 +33,9 @@ function negyzetKerulet() {
   let kerulet = 4 * oldal;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzet kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A négyzet kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=4a`);
-  kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
 }
 
@@ -50,9 +50,9 @@ function teglalapKerulet() {
   let kerulet = 2 * (oldal1 + oldal2);
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglalap kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A téglalap kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=2(a+b)`);
-  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
 }
 
@@ -69,9 +69,9 @@ function haromszogKerulet() {
   let kerulet = oldal1 + oldal2 + oldal3;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A háromszög kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A háromszög kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=a+b+c`);
-  kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3} cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3} cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
 }
 
@@ -84,9 +84,9 @@ function rombuszKerulet() {
   let kerulet = 4 * oldal;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A rombusz kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A rombusz kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=4a`);
-  kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
 }
 
@@ -101,9 +101,9 @@ function paralelogrammaKerulet() {
   let kerulet = 2 * (oldal1 + oldal2);
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A paralelogramma kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A paralelogramma kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=2(a+b)`);
-  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
 }
 
@@ -118,9 +118,9 @@ function deltoidKerulet() {
   let kerulet = 2 * (oldal1 + oldal2);
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A deltoid kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A deltoid kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=2(a+b)`);
-  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
 }
 
@@ -139,9 +139,9 @@ function trapezKerulet() {
   let kerulet = oldal1 + oldal2 + oldal3 + oldal4;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A trapéz kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A trapéz kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=a+b+c+d`);
-  kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3}+${oldal4} cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3}+${oldal4} cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/trapez.png">`);
 }
 
@@ -158,9 +158,9 @@ function hurtrapezKerulet() {
   let kerulet = oldal1 + oldal2 + 2 * oldal3;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A húrtrapéz kerülete: <span>${kerulet} cm</span>.`);
+  kiIrJobb(`A húrtrapéz kerülete: <span>${kerulet} cm</span>`);
   kiIrKozep(`K=a+b+c+2*d`);
-  kiIrKozep(`K=${oldal1}+${oldal2}+2*${oldal3} cm=<span>${kerulet} cm</span>.`);
+  kiIrKozep(`K=${oldal1}+${oldal2}+2*${oldal3} cm=<span>${kerulet} cm</span>`);
   kiIrBal(`<img src="img/sikidomok/hurtrapez.png">`);
 }
 
@@ -174,9 +174,9 @@ function negyzetTerulet() {
   let terulet = Math.pow(oldal, 2);
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzet területe: <span><span>${terulet} cm<sup>2</sup></span</span>.`);
+  kiIrJobb(`A négyzet területe: <span>${terulet} cm<sup>2</sup></span>`);
   kiIrKozep(`T=a*a`);
-  kiIrKozep(`T=${oldal}*${oldal} cm=<span><span>${terulet} cm<sup>2</sup></span</span>.`);
+  kiIrKozep(`T=${oldal}*${oldal} cm=<span>${terulet} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
 }
 
@@ -191,9 +191,9 @@ function teglalapTerulet() {
   let terulet = oldal1 * oldal2;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglalap területe: <span><span>${terulet} cm<sup>2</sup></span</span>.`);
+  kiIrJobb(`A téglalap területe: <span>${terulet} cm<sup>2</sup></span>`);
   kiIrKozep(`T=a*b`);
-  kiIrKozep(`T=${oldal1}*${oldal2} cm=<span><span>${terulet} cm<sup>2</sup></span</span>.`);
+  kiIrKozep(`T=${oldal1}*${oldal2} cm=<span>${terulet} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
 }
 
@@ -208,9 +208,9 @@ function haromszogTerulet() {
   let terulet = (oldal * magassag) / 2;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A háromszög területe: <span>${terulet} cm<sup>2<sup></span>.`);
+  kiIrJobb(`A háromszög területe: <span>${terulet} cm<sup>2<sup></span>`);
   kiIrKozep(`T=(a*m<sub>a</sub>)/2`);
-  kiIrKozep(`T=(${oldal}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span.`);
+  kiIrKozep(`T=(${oldal}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
 }
 
@@ -225,9 +225,9 @@ function rombuszTeruletAtlo() {
   let terulet = (atlo1 * atlo2) / 2;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span.`);
+  kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
   kiIrKozep(`T=(e*f)/2`);
-  kiIrKozep(`T=(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span.`);
+  kiIrKozep(`T=(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
 }
 
@@ -242,9 +242,9 @@ function rombuszTeruletMagassag() {
   let terulet = oldal * magassag;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span.`);
+  kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
   kiIrKozep(`T=a*m<sub>a</sub>`);
-  kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span.`);
+  kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
 }
 
@@ -259,9 +259,9 @@ function paralelogrammaTerulet() {
   let terulet = oldal * magassag;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A paralelogramma területe: <span>${terulet} cm<sup>2</sup></span.`);
+  kiIrJobb(`A paralelogramma területe: <span>${terulet} cm<sup>2</sup></span>`);
   kiIrKozep(`T=a*m<sub>a</sub>`);
-  kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span.`);
+  kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
 }
 
@@ -276,9 +276,9 @@ function deltoidTerulet() {
   let terulet = (atlo1 * atlo2) / 2;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A deltoid területe: <span>${terulet} cm<sup>2</sup></span.`);
+  kiIrJobb(`A deltoid területe: <span>${terulet} cm<sup>2</sup></span>`);
   kiIrKozep(`T=(e*f)/2`);
-  kiIrKozep(`T=$(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span.`);
+  kiIrKozep(`T=$(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
 }
 
@@ -295,10 +295,10 @@ function trapezTerulet() {
   let terulet = ((alap1 + alap2) / 2) * magassag;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A trapéz területe: <span>${terulet} cm<sup>2</sup></span.`);
+  kiIrJobb(`A trapéz területe: <span>${terulet} cm<sup>2</sup></span>`);
   kiIrKozep(`T=(a+c*m)/2`);
   kiIrKozep(
-    `T=(${alap1}+${alap2}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span.`
+    `T=(${alap1}+${alap2}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`
   );
   kiIrBal(`<img src="img/sikidomok/trapez.png">`);
 }
@@ -313,9 +313,9 @@ function kockaTerfogat() {
   let terfogat = Math.pow(oldal, 3);
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A kocka térfogata: <span>${terfogat} cm<sup>3</sup></span.`);
+  kiIrJobb(`A kocka térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
   kiIrKozep(`V=a<sup>3</sup>`);
-  kiIrKozep(`V=${oldal}<sup>3</sup> cm=${terfogat} cm<sup>3</sup>`);
+  kiIrKozep(`V=${oldal}<sup>3</sup> cm=<span>${terfogat} cm<sup>3</sup></span>`);
   kiIrBal(`<img src="img/testek/kocka.png">`);
 }
 
@@ -332,9 +332,9 @@ function teglatestTerfogat() {
   let terfogat = oldal1 * oldal2 * oldal3;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglatest térfogata: ${terfogat} cm<sup>3</sup>.`);
+  kiIrJobb(`A téglatest térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
   kiIrKozep(`V=abc`);
-  kiIrKozep(`V=${oldal1}*${oldal2}*${oldal3} cm=${terfogat} cm<sup>3</sup>`);
+  kiIrKozep(`V=${oldal1}*${oldal2}*${oldal3} cm=<span>${terfogat} cm<sup>3</sup></span>`);
   kiIrBal(`<img src="img/testek/teglatest.gif">`);
 }
 
@@ -349,9 +349,9 @@ function negyzetesOszlopTerfogat() {
   let terfogat = Math.pow(oldal, 2) * magassag;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzetes oszlop térfogata: ${terfogat} cm<sup>3</sup>.`);
+  kiIrJobb(`A négyzetes oszlop térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
   kiIrKozep(`V=a<sup>2</sup>*m`);
-  kiIrKozep(`V=${oldal}<sup>2</sup>*${magassag} cm=${terfogat} cm<sup>3</sup>`);
+  kiIrKozep(`V=${oldal}<sup>2</sup>*${magassag} cm=<span>${terfogat} cm<sup>3</sup></span>`);
   kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
 }
 
@@ -367,10 +367,10 @@ function egyenesKorhengerTerfogat() {
   let terfogat = Math.pow(sugar, 2) * pi * magassag;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`Az egyenes körhenger térfogata: ${terfogat} cm<sup>3</sup>.`);
+  kiIrJobb(`Az egyenes körhenger térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
   kiIrKozep(`V=r<sup>2</sup> * &Pi; * m`);
   kiIrKozep(
-    `V=${sugar}<sup>2</sup> * ${pi} * ${magassag}cm=${terfogat} cm<sup>3</sup>`
+    `V=${sugar}<sup>2</sup> * ${pi} * ${magassag}cm=<span>${terfogat} cm<sup>3</sup></span>`
   );
   kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
 }
@@ -387,11 +387,11 @@ function negyzetAlapuSzabalyosGulaTerfogat() {
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
   kiIrJobb(
-    `A négyzet alapú szabályos gúla térfogata: ${terfogat} cm<sup>3</sup>.`
+    `A négyzet alapú szabályos gúla térfogata: <span>${terfogat} cm<sup>3</sup></span>`
   );
   kiIrKozep(`V=(a<sup>2</sup> * m)/3`);
   kiIrKozep(
-    `V=(${oldal}<sup>2</sup> * ${magassag} cm)/3=${terfogat} cm<sup>3</sup>`
+    `V=(${oldal}<sup>2</sup> * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
   );
   kiIrBal(`<img src="img/testek/gula.gif">`);
 }
@@ -406,9 +406,9 @@ function gombTerfogat() {
   let terfogat = (4 * Math.pow(sugar, 3) * pi) / 3;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A gömb térfogata: ${terfogat} cm<sup>3</sup>.`);
+  kiIrJobb(`A gömb térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
   kiIrKozep(`V=(4r<sup>3</sup> * &Pi;)/3`);
-  kiIrKozep(`V=(${sugar}<sup>3</sup> * ${pi} cm)/3=${terfogat} cm<sup>3</sup>`);
+  kiIrKozep(`V=(${sugar}<sup>3</sup> * ${pi} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`);
   kiIrBal(`<img src="img/testek/gomb.png">`);
 }
 
@@ -424,10 +424,10 @@ function egyenesKorkupTerfogat() {
   let terfogat = (Math.pow(sugar, 2) * pi * magassag) / 3;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A kúp térfogata: ${terfogat} cm<sup>3</sup>.`);
+  kiIrJobb(`A kúp térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
   kiIrKozep(`V=(r<sup>2</sup> * &Pi; * m)/3`);
   kiIrKozep(
-    `V=(${sugar}<sup>2</sup> * ${pi} * ${magassag} cm)/3=${terfogat} cm<sup>3</sup>`
+    `V=(${sugar}<sup>2</sup> * ${pi} * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
   );
   kiIrBal(`<img src="img/testek/kup.gif">`);
 }
@@ -440,11 +440,11 @@ function kockaFelszin() {
   let oldal = prompt("Add meg a négyzet oldalát!");
   oldal = Math.abs(oldal);
   let felszin = 6 * Math.pow(oldal, 2);
-  kiIrJobb(`A kocka felszíne: <span>${felszin} cm<sup>2</sup></span.`);
+  kiIrJobb(`A kocka felszíne: <span>${felszin} cm<sup>2</sup></span>`);
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
   kiIrKozep(`A=6a<sup>2</sup>`);
-  kiIrKozep(`A=6*${oldal}<sup>2</sup> cm=<span>${felszin} cm<sup>2</sup></span`);
+  kiIrKozep(`A=6*${oldal}<sup>2</sup> cm=<span>${felszin} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/testek/kocka.png">`);
 }
 
@@ -461,9 +461,9 @@ function teglatestFelszin() {
   let felszin = 2 * (oldal1 * oldal2 + oldal2 * oldal3 + oldal1 * oldal3);
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A téglatest felszíne: <span>${felszin} cm<sup>2</sup></span.`);
+  kiIrJobb(`A téglatest felszíne: <span>${felszin} cm<sup>2</sup></span>`);
   kiIrKozep(`A=2(ab+bc+ac)`);
-  kiIrKozep(`A=2*(${oldal1} * ${oldal2} + ${oldal2} * ${oldal3} + ${oldal1} * ${oldal3}) cm=<span>${felszin} cm<sup>2</sup></span`);
+  kiIrKozep(`A=2*(${oldal1} * ${oldal2} + ${oldal2} * ${oldal3} + ${oldal1} * ${oldal3}) cm=<span>${felszin} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/testek/teglatest.gif">`);
 }
 
@@ -478,9 +478,9 @@ function negyzetesOszlopFelszin() {
   let felszin = 2 * Math.pow(oldal, 2) + 4 * oldal * magassag;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A négyzetes oszlop felszíne: <span>${felszin} cm<sup>2</sup></span.`);
+  kiIrJobb(`A négyzetes oszlop felszíne: <span>${felszin} cm<sup>2</sup></span>`);
   kiIrKozep(`A=2a<sup>2</sup> + 4am`);
-  kiIrKozep(`A=2*${oldal}<sup>2</sup> + 4*${oldal}*${magassag} cm=<span>${felszin} cm<sup>2</sup></span`);
+  kiIrKozep(`A=2*${oldal}<sup>2</sup> + 4*${oldal}*${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
 }
 
@@ -496,9 +496,9 @@ function egyenesKorhengerFelszin() {
   let felszin = 2 * Math.pow(sugar, 2) * pi + 2 * sugar * pi * magassag;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`Az egyenes körhenger felszíne: <span>${felszin} cm<sup>2</sup></span.`);
+  kiIrJobb(`Az egyenes körhenger felszíne: <span>${felszin} cm<sup>2</sup></span>`);
   kiIrKozep(`A=2 * r<sup>2</sup> * &Pi; + 2 * r * &Pi; * m`);
-  kiIrKozep(`A=2*${sugar}<sup>2</sup> * ${pi} + 2 * ${sugar} * ${pi} * ${magassag} cm=<span>${felszin} cm<sup>2</sup></span`);
+  kiIrKozep(`A=2*${sugar}<sup>2</sup> * ${pi} + 2 * ${sugar} * ${pi} * ${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
 }
 
@@ -515,9 +515,9 @@ function negyzetAlapuSzabalyosGulaFelszin() {
   let felszin = Math.pow(oldal1, 2) + 4 * (oldal1*magassag) / 2;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A gúla felszíne: <span>${felszin} cm<sup>2</sup></span.`);
+  kiIrJobb(`A gúla felszíne: <span>${felszin} cm<sup>2</sup></span>`);
   kiIrKozep(`A=a<sup>2</sup> + 4 * (a * m<sub>a</sub>) / 2`);
-  kiIrKozep(`A=${oldal1}<sup>2</sup> + (4 * ${oldal1} * ${magassag}) / 2 cm=<span>${felszin} cm<sup>2</sup></span`);
+  kiIrKozep(`A=${oldal1}<sup>2</sup> + (4 * ${oldal1} * ${magassag}) / 2 cm=<span>${felszin} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/testek/gula.gif">`);
 }
 
@@ -531,9 +531,9 @@ function gombFelszin() {
   let felszin = 4 * Math.pow(sugar, 2) * pi;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A gömb felszíne: <span>${felszin} cm<sup>2</sup></span.`);
+  kiIrJobb(`A gömb felszíne: <span>${felszin} cm<sup>2</sup></span>`);
   kiIrKozep(`A=4 * r<sup>2</sup> * &Pi;`);
-  kiIrKozep(`A=4 * ${sugar} * ${pi} cm=<span>${felszin} cm<sup>2</sup></span`);
+  kiIrKozep(`A=4 * ${sugar} * ${pi} cm=<span>${felszin} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/testek/gomb.png">`);
 }
 
@@ -549,9 +549,9 @@ function egyenesKorkupFelszin() {
   let felszin = Math.pow(sugar, 2) * pi + sugar * pi * atfogo;
   leftDiv.style.borderRight = "1px solid #000";
   centerDiv.style.borderRight = "1px solid #000";
-  kiIrJobb(`A kúp felszíne: <span>${felszin} cm<sup>2</sup></span.`);
+  kiIrJobb(`A kúp felszíne: <span>${felszin} cm<sup>2</sup></span>`);
   kiIrKozep(`A=r<sup>2</sup> * &Pi; + r * &Pi; * a`);
-  kiIrKozep(`A=${sugar}<sup>2</sup> * ${pi} + ${sugar} * ${pi} * ${atfogo}cm=<span>${felszin} cm<sup>2</sup></span`);
+  kiIrKozep(`A=${sugar}<sup>2</sup> * ${pi} + ${sugar} * ${pi} * ${atfogo}cm=<span>${felszin} cm<sup>2</sup></span>`);
   kiIrBal(`<img src="img/testek/kup.gif">`);
 }
 
