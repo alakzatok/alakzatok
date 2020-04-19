@@ -257,7 +257,7 @@ function negyzetTerulet() {
   } else if(oldal == 0 | oldal == ""){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
-    alert("Kérlek nagoybb számot adjon meg, mint 0!");
+    alert("Kérlek nagyobb számot adjon meg, mint 0!");
   } else{
     oldal = Math.abs(oldal);
     let terulet = Math.pow(oldal, 2);
