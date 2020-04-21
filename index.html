@@ -14,8 +14,8 @@
       <div class="felso-navbar-cim">
         <h1>Alakzatokkal kapcsolatos számítások</h1>
       </div>
-      <span class="open-slide">
-        <a href="#" onclick="openSlideMenu()">
+      <span href="#" class="open-slide">
+        <a href="#" class="open-sidenav" onclick="openSlideMenu()">
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#ffffff" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#ffffff" stroke-width="5" />
@@ -273,6 +273,8 @@
       </li>
     </ul>
 
+    <div class="hide-sidenav"></div>
+
     <div class="kiiratas" id="kiiratas">
       <div id="left-content" class="left-content"><!-- ábra --></div>
       <div id="center-content" class="center-content"><!-- kiíratás --></div>
@@ -283,6 +285,7 @@
       <p>&copy; 2020 Géczi Kornél</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
