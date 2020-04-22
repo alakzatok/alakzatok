@@ -65,6 +65,7 @@ ul.show{
 }
 
 .hide-sidenav{
+    display: none;
     position: absolute;
     z-index: 9;
     width: 100%;

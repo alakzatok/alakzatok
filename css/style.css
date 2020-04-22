@@ -134,6 +134,7 @@ ul.show {
 }
 
 .hide-sidenav {
+  display: none;
   position: absolute;
   z-index: 9;
   width: 100%;
@@ -226,6 +227,10 @@ footer p {
 
   .center-content {
     border: none !important;
+  }
+
+  .hide-sidenav {
+    display: block;
   }
 }
 
