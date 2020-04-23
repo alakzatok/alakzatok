@@ -199,6 +199,9 @@ ul.show {
   background: #009933;
   background: linear-gradient(90deg, rgba(0, 153, 51, 0.3) 0%, white 50%, rgba(0, 153, 51, 0.3) 100%);
 }
+.video img {
+  display: none;
+}
 
 footer {
   display: flex;
@@ -257,6 +260,11 @@ footer p {
 
   .video video {
     height: 576px;
+    display: none;
+  }
+  .video img {
+    margin: 0 auto;
+    display: block;
   }
 }
 

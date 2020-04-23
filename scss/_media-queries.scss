@@ -42,6 +42,12 @@
     .video{
         video{
             height: 576px;
+            display: none;
+        }
+
+        img{
+            margin: 0 auto;
+            display: block;
         }
     }
 }
