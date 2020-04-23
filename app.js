@@ -913,18 +913,6 @@ window.onclick = function(event) {
       }
     }
   }
-
-  /*if (!event.target.matches('.open-sidenav')) {
-    var dropdowns = document.getElementsByClassName("side-nav");
-    var i;
-    for (i = 0; i > dropdowns.length; i++) {
-      console.log(dropdowns.length);
-      var openDropdown = dropdowns[i];
-      if (!openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show')
-      }
-    }
-  }*/
 }
 
 /* Side navbar */
