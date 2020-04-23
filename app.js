@@ -33,10 +33,14 @@ function negyzetKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  }else if(oldal == 0 | oldal == ""){
+  }else if(oldal == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal == null | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!!");
   } else{
     oldal = Math.abs(oldal);
     let kerulet = 4 * oldal;
@@ -59,10 +63,14 @@ function teglalapKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal1 == null | oldal2 == null | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!!");
   }else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -87,10 +95,14 @@ function haromszogKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0" | oldal3 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal1 == null | oldal2 == null | oldal3 == null | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   }else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -114,10 +126,14 @@ function rombuszKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | oldal == ""){
+  } else if(oldal == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal == null | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   }else{
     oldal = Math.abs(oldal);
     let kerulet = 4 * oldal;
@@ -140,10 +156,14 @@ function paralelogrammaKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal1 == null | oldal2 == null | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   }else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -167,10 +187,14 @@ function deltoidKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  }else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+  }else if(oldal1 == "0" | oldal2 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal1 == null | oldal2 == null | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -196,10 +220,14 @@ function trapezKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal4 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == "" | oldal4 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0" | oldal3 == "0" | oldal4 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal1 == null | oldal2 == null | oldal3 == null | oldal4 == null | oldal1 == "" | oldal2 == "" | oldal3 == "" | oldal4 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -226,10 +254,14 @@ function hurtrapezKerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0" | oldal3 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal1 == null | oldal2 == null | oldal3 == null | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -254,10 +286,14 @@ function negyzetTerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | oldal == ""){
+  } else if(oldal == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek adj meg egy olyan számot, ami nagyobb, mint 0!");
+  } else if(oldal == null | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     let terulet = Math.pow(oldal, 2);
@@ -280,10 +316,14 @@ function teglalapTerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal1 == "" | oldal2 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal1 == null | oldal2 == null | oldal1 == "" | oldal2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   }else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -307,10 +347,14 @@ function haromszogTerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+  } else if(oldal == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal == null | magassag == null | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     magassag = Math.abs(magassag);
@@ -334,10 +378,14 @@ function rombuszTeruletAtlo() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(atlo1 == 0 | atlo2 == 0 | atlo1 == "" | atlo2 == ""){
+  } else if(atlo1 == "0" | atlo2 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(atlo1 == null | atlo2 == null | atlo1 == "" | atlo2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   }else{
     atlo1 = Math.abs(atlo1);
     atlo2 = Math.abs(atlo2);
@@ -361,10 +409,14 @@ function rombuszTeruletMagassag() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+  } else if(oldal == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  }else if(oldal == null | magassag == null | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     magassag = Math.abs(magassag);
@@ -388,10 +440,14 @@ function paralelogrammaTerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+  } else if(oldal == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal == null | magassag == null | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     magassag = Math.abs(magassag);
@@ -415,10 +471,14 @@ function deltoidTerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(atlo1 == 0 | atlo2 == 0 | atlo1 == "" | atlo2 == ""){
+  } else if(atlo1 == "0" | atlo2 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(atlo1 == null | atlo2 == null | atlo1 == "" | atlo2 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     atlo1 = Math.abs(atlo1);
     atlo2 = Math.abs(atlo2);
@@ -443,10 +503,14 @@ function trapezTerulet() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(alap1 == 0 | alap2 == 0 | magassag == 0 | alap1 == "" | alap2 == "" | magassag == ""){
+  } else if(alap1 == "0" | alap2 == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(alap1 == null | alap2 == null | magassag == null | alap1 == "" | alap2 == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     alap1 = Math.abs(alap1);
     alap2 = Math.abs(alap2);
@@ -473,10 +537,14 @@ function kockaTerfogat() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | oldal == ""){
+  } else if(oldal == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal == null | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     let terfogat = Math.pow(oldal, 3);
@@ -500,10 +568,14 @@ function teglatestTerfogat() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0" | oldal3 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal1 == null | oldal2 == null | oldal3 == null | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -528,10 +600,14 @@ function negyzetesOszlopTerfogat() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+  } else if(oldal == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal == null | magassag == null | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     magassag = Math.abs(magassag);
@@ -556,10 +632,14 @@ function egyenesKorhengerTerfogat() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(sugar == 0 | magassag == 0 | sugar == "" | magassag == ""){
+  } else if(sugar == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(sugar == null | magassag == null | sugar == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     sugar = Math.abs(sugar);
     magassag = Math.abs(magassag);
@@ -585,10 +665,14 @@ function negyzetAlapuSzabalyosGulaTerfogat() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+  } else if(oldal == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal == null | magassag == null | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     magassag = Math.abs(magassag);
@@ -616,10 +700,14 @@ function gombTerfogat() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(sugar == 0 | sugar == ""){
+  } else if(sugar == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(sugar == null | sugar == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     sugar = Math.abs(sugar);
     let terfogat = (4 * Math.pow(sugar, 3) * pi) / 3;
@@ -643,10 +731,14 @@ function egyenesKorkupTerfogat() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(sugar == 0 | magassag == 0 | sugar == "" | magassag == ""){
+  } else if(sugar == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(sugar == null | magassag == null | sugar == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     sugar = Math.abs(sugar);
     magassag = Math.abs(sugar);
@@ -672,11 +764,15 @@ function kockaFelszin() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | oldal == ""){
+  } else if(oldal == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
-  } else{     
+  } else if(oldal == null | oldal == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
+  } else{
     oldal = Math.abs(oldal);
     let felszin = 6 * Math.pow(oldal, 2);
     kiIrJobb(`A kocka felszíne: <span>${felszin} cm<sup>2</sup></span>`);
@@ -699,10 +795,14 @@ function teglatestFelszin() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | oldal2 == 0 | oldal3 == 0 | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+  } else if(oldal1 == "0" | oldal2 == "0" | oldal3 == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal1 == null | oldal2 == null | oldal3 == null | oldal1 == "" | oldal2 == "" | oldal3 == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else {
     oldal1 = Math.abs(oldal1);
     oldal2 = Math.abs(oldal2);
@@ -727,10 +827,14 @@ function negyzetesOszlopFelszin() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal == 0 | magassag == 0 | oldal == "" | magassag == ""){
+  } else if(oldal == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal == null | magassag == null | oldal == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal = Math.abs(oldal);
     magassag = Math.abs(magassag);
@@ -755,10 +859,14 @@ function egyenesKorhengerFelszin() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(sugar == 0 | magassag == 0 | sugar == "" | magassag == ""){
+  } else if(sugar == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(sugar == null | magassag == null | sugar == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     sugar = Math.abs(sugar);
     magassag = Math.abs(magassag);
@@ -784,10 +892,14 @@ function negyzetAlapuSzabalyosGulaFelszin() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(oldal1 == 0 | magassag == 0 | oldal1 == "" | magassag == ""){
+  } else if(oldal1 == "0" | magassag == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(oldal1 == null | magassag == null | oldal1 == "" | magassag == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     oldal1 = Math.abs(oldal1);
     magassag = Math.abs(magassag);
@@ -811,10 +923,14 @@ function gombFelszin() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(sugar == 0 | sugar == ""){
+  } else if(sugar == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(sugar == null | sugar == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     sugar = Math.abs(sugar);
     let felszin = 4 * Math.pow(sugar, 2) * pi;
@@ -838,10 +954,14 @@ function egyenesKorkupFelszin() {
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek számot adjál meg!");
-  } else if(atfogo == 0 | sugar == 0 | atfogo == "" | sugar == ""){
+  } else if(atfogo == "0" | sugar == "0"){
     leftDiv.style.borderRight = "0";
     centerDiv.style.borderRight = "0";
     alert("Kérlek nagyobb számot adjál meg, mint 0!");
+  } else if(atfogo == null | sugar == null | atfogo == "" | sugar == ""){
+    leftDiv.style.borderRight = "0";
+    centerDiv.style.borderRight = "0";
+    alert("Kérlek adj meg egy számot!");
   } else{
     atfogo = Math.abs(atfogo);
     sugar = Math.abs(sugar);
