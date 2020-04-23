@@ -1,11 +1,24 @@
 nav.felso-navbar {
   display: flex;
-  justify-content: center;
   background: $felso-navbar-background;
   height: 50px;
 
+  .home-left{
+    margin: 8px 0 0 20px;
+    font-size: 30px;
+
+    a{
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      color: #fff;
+
+      &:hover{
+        color: rgba(255,255,255,.7);
+      }
+    }
+  }
+
   .felso-navbar-cim {
-    margin: 10px 0;
+    margin: 10px auto;
 
     h1 {
       color: #fff;
