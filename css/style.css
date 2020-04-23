@@ -232,6 +232,10 @@ footer p {
   }
 }
 @media (max-width: 890px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .kiiratas {
     flex-wrap: wrap;
   }
