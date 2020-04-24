@@ -54,7 +54,7 @@ function negyzetKerulet() {
     kiIrJobb(`A négyzet kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=4a`);
     kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
+    kiIrBal(`<img alt="Négyzet" src="img/sikidomok/negyzet.png">`);
   }
 }
 
@@ -89,7 +89,7 @@ function teglalapKerulet() {
     kiIrJobb(`A téglalap kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=2(a+b)`);
     kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
+    kiIrBal(`<img alt="Téglalap" src="img/sikidomok/teglalap.png">`);
   }
 }
 
@@ -126,7 +126,7 @@ function haromszogKerulet() {
     kiIrJobb(`A háromszög kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=a+b+c`);
     kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3} cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
+    kiIrBal(`<img alt="Háromszög" src="img/sikidomok/haromszog.png">`);
   }
 }
 
@@ -159,7 +159,7 @@ function rombuszKerulet() {
     kiIrJobb(`A rombusz kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=4a`);
     kiIrKozep(`K=4*${oldal} cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+    kiIrBal(`<img alt="Rombusz" src="img/sikidomok/rombusz.png">`);
   }
 }
 
@@ -194,7 +194,7 @@ function paralelogrammaKerulet() {
     kiIrJobb(`A paralelogramma kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=2(a+b)`);
     kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
+    kiIrBal(`<img alt="Paralelogramma" src="img/sikidomok/paralelogramma.png">`);
   }
 }
 
@@ -229,7 +229,7 @@ function deltoidKerulet() {
     kiIrJobb(`A deltoid kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=2(a+b)`);
     kiIrKozep(`K=2*(${oldal1}+${oldal2}) cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
+    kiIrBal(`<img alt="Deltoid" src="img/sikidomok/deltoid.png">`);
   }
 }
 
@@ -268,7 +268,7 @@ function trapezKerulet() {
     kiIrJobb(`A trapéz kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=a+b+c+d`);
     kiIrKozep(`K=${oldal1}+${oldal2}+${oldal3}+${oldal4} cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/trapez.png">`);
+    kiIrBal(`<img alt="Trapéz" src="img/sikidomok/trapez.png">`);
   }
 }
 
@@ -305,7 +305,7 @@ function hurtrapezKerulet() {
     kiIrJobb(`A húrtrapéz kerülete: <span>${kerulet} cm</span>`);
     kiIrKozep(`K=a+b+c+2*d`);
     kiIrKozep(`K=${oldal1}+${oldal2}+2*${oldal3} cm=<span>${kerulet} cm</span>`);
-    kiIrBal(`<img src="img/sikidomok/hurtrapez.png">`);
+    kiIrBal(`<img alt="Húrtrapéz" src="img/sikidomok/hurtrapez.png">`);
   }
 }
 
@@ -339,7 +339,7 @@ function negyzetTerulet() {
     kiIrJobb(`A négyzet területe: <span>${terulet} cm<sup>2</sup></span>`);
     kiIrKozep(`T=a*a`);
     kiIrKozep(`T=${oldal}*${oldal} cm=<span>${terulet} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/sikidomok/negyzet.png">`);
+    kiIrBal(`<img alt="Négyzet" src="img/sikidomok/negyzet.png">`);
   }
 }
 
@@ -374,7 +374,7 @@ function teglalapTerulet() {
     kiIrJobb(`A téglalap területe: <span>${terulet} cm<sup>2</sup></span>`);
     kiIrKozep(`T=a*b`);
     kiIrKozep(`T=${oldal1}*${oldal2} cm=<span>${terulet} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/sikidomok/teglalap.png">`);
+    kiIrBal(`<img alt="Téglalap" src="img/sikidomok/teglalap.png">`);
   }
 }
 
@@ -409,7 +409,7 @@ function haromszogTerulet() {
     kiIrJobb(`A háromszög területe: <span>${terulet} cm<sup>2<sup></span>`);
     kiIrKozep(`T=(a*m<sub>a</sub>)/2`);
     kiIrKozep(`T=(${oldal}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/sikidomok/haromszog.png">`);
+    kiIrBal(`<img alt="Háromszög" src="img/sikidomok/haromszog.png">`);
   }
 }
 
@@ -444,7 +444,7 @@ function rombuszTeruletAtlo() {
     kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
     kiIrKozep(`T=(e*f)/2`);
     kiIrKozep(`T=(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+    kiIrBal(`<img alt="Rombusz" src="img/sikidomok/rombusz.png">`);
   }
 }
 
@@ -479,7 +479,7 @@ function rombuszTeruletMagassag() {
     kiIrJobb(`A rombusz területe: <span>${terulet} cm<sup>2</sup></span>`);
     kiIrKozep(`T=a*m<sub>a</sub>`);
     kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/sikidomok/rombusz.png">`);
+    kiIrBal(`<img alt="Rombusz" src="img/sikidomok/rombusz.png">`);
   }
 }
 
@@ -514,7 +514,7 @@ function paralelogrammaTerulet() {
     kiIrJobb(`A paralelogramma területe: <span>${terulet} cm<sup>2</sup></span>`);
     kiIrKozep(`T=a*m<sub>a</sub>`);
     kiIrKozep(`T=${oldal}*${magassag} cm=<span>${terulet} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/sikidomok/paralelogramma.png">`);
+    kiIrBal(`<img alt="Paralelogramma" src="img/sikidomok/paralelogramma.png">`);
   }
 }
 
@@ -549,7 +549,7 @@ function deltoidTerulet() {
     kiIrJobb(`A deltoid területe: <span>${terulet} cm<sup>2</sup></span>`);
     kiIrKozep(`T=(e*f)/2`);
     kiIrKozep(`T=$(${atlo1}*${atlo2})/2 cm=<span>${terulet} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/sikidomok/deltoid.png">`);
+    kiIrBal(`<img alt="Deltoid" src="img/sikidomok/deltoid.png">`);
   }
 }
 
@@ -588,7 +588,7 @@ function trapezTerulet() {
     kiIrKozep(
       `T=(${alap1}+${alap2}*${magassag})/2 cm=<span>${terulet} cm<sup>2</sup></span>`
     );
-    kiIrBal(`<img src="img/sikidomok/trapez.png">`);
+    kiIrBal(`<img alt="Trapéz" src="img/sikidomok/trapez.png">`);
   }
 }
 
@@ -622,7 +622,7 @@ function kockaTerfogat() {
     kiIrJobb(`A kocka térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
     kiIrKozep(`V=a<sup>3</sup>`);
     kiIrKozep(`V=${oldal}<sup>3</sup> cm=<span>${terfogat} cm<sup>3</sup></span>`);
-    kiIrBal(`<img src="img/testek/kocka.png">`);
+    kiIrBal(`<img alt="Kocka" src="img/testek/kocka.png">`);
   }
 }
 
@@ -659,7 +659,7 @@ function teglatestTerfogat() {
     kiIrJobb(`A téglatest térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
     kiIrKozep(`V=abc`);
     kiIrKozep(`V=${oldal1}*${oldal2}*${oldal3} cm=<span>${terfogat} cm<sup>3</sup></span>`);
-    kiIrBal(`<img src="img/testek/teglatest.gif">`);
+    kiIrBal(`<img alt="Téglatest" src="img/testek/teglatest.gif">`);
   }
 }
 
@@ -694,7 +694,7 @@ function negyzetesOszlopTerfogat() {
     kiIrJobb(`A négyzetes oszlop térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
     kiIrKozep(`V=a<sup>2</sup>*m`);
     kiIrKozep(`V=${oldal}<sup>2</sup>*${magassag} cm=<span>${terfogat} cm<sup>3</sup></span>`);
-    kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
+    kiIrBal(`<img alt="Négyzetes oszlop" src="img/testek/negyzetes_oszlop.gif">`);
   }
 }
 
@@ -732,7 +732,7 @@ function egyenesKorhengerTerfogat() {
     kiIrKozep(
       `V=${sugar}<sup>2</sup> * ${pi} * ${magassag}cm=<span>${terfogat} cm<sup>3</sup></span>`
     );
-    kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
+    kiIrBal(`<img alt="Egyenes körhenger" src="img/testek/egyenes_korhenger.png">`);
   }
 }
 
@@ -771,7 +771,7 @@ function negyzetAlapuSzabalyosGulaTerfogat() {
     kiIrKozep(
       `V=(${oldal}<sup>2</sup> * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
     );
-    kiIrBal(`<img src="img/testek/gula.gif">`);
+    kiIrBal(`<img alt="Négyzet alapú szabályos gúla" src="img/testek/gula.gif">`);
   }
 }
 
@@ -805,7 +805,7 @@ function gombTerfogat() {
     kiIrJobb(`A gömb térfogata: <span>${terfogat} cm<sup>3</sup></span>`);
     kiIrKozep(`V=(4r<sup>3</sup> * &Pi;)/3`);
     kiIrKozep(`V=(${sugar}<sup>3</sup> * ${pi} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`);
-    kiIrBal(`<img src="img/testek/gomb.png">`);
+    kiIrBal(`<img alt="Gömb" src="img/testek/gomb.png">`);
   }
 }
 
@@ -843,7 +843,7 @@ function egyenesKorkupTerfogat() {
     kiIrKozep(
       `V=(${sugar}<sup>2</sup> * ${pi} * ${magassag} cm)/3=<span>${terfogat} cm<sup>3</sup></span>`
     );
-    kiIrBal(`<img src="img/testek/kup.gif">`);
+    kiIrBal(`<img alt="Egyenes körkúp" src="img/testek/kup.gif">`);
   }
 }
 
@@ -877,7 +877,7 @@ function kockaFelszin() {
     centerDiv.style.borderRight = "1px solid #000";
     kiIrKozep(`A=6a<sup>2</sup>`);
     kiIrKozep(`A=6*${oldal}<sup>2</sup> cm=<span>${felszin} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/testek/kocka.png">`);
+    kiIrBal(`<img alt="Kocka" src="img/testek/kocka.png">`);
   }
 }
 
@@ -914,7 +914,7 @@ function teglatestFelszin() {
     kiIrJobb(`A téglatest felszíne: <span>${felszin} cm<sup>2</sup></span>`);
     kiIrKozep(`A=2(ab+bc+ac)`);
     kiIrKozep(`A=2*(${oldal1} * ${oldal2} + ${oldal2} * ${oldal3} + ${oldal1} * ${oldal3}) cm=<span>${felszin} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/testek/teglatest.gif">`);
+    kiIrBal(`<img alt="Téglatest" src="img/testek/teglatest.gif">`);
   }
 }
 
@@ -949,7 +949,7 @@ function negyzetesOszlopFelszin() {
     kiIrJobb(`A négyzetes oszlop felszíne: <span>${felszin} cm<sup>2</sup></span>`);
     kiIrKozep(`A=2a<sup>2</sup> + 4am`);
     kiIrKozep(`A=2*${oldal}<sup>2</sup> + 4*${oldal}*${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/testek/negyzetes_oszlop.gif">`);
+    kiIrBal(`<img alt="Négyzetes oszlop" src="img/testek/negyzetes_oszlop.gif">`);
   }
 }
 
@@ -985,7 +985,7 @@ function egyenesKorhengerFelszin() {
     kiIrJobb(`Az egyenes körhenger felszíne: <span>${felszin} cm<sup>2</sup></span>`);
     kiIrKozep(`A=2 * r<sup>2</sup> * &Pi; + 2 * r * &Pi; * m`);
     kiIrKozep(`A=2*${sugar}<sup>2</sup> * ${pi} + 2 * ${sugar} * ${pi} * ${magassag} cm=<span>${felszin} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/testek/egyenes_korhenger.png">`);
+    kiIrBal(`<img alt="Egyenes körhenger" src="img/testek/egyenes_korhenger.png">`);
   }
 }
 
@@ -1022,7 +1022,7 @@ function negyzetAlapuSzabalyosGulaFelszin() {
     kiIrJobb(`A gúla felszíne: <span>${felszin} cm<sup>2</sup></span>`);
     kiIrKozep(`A=a<sup>2</sup> + 4 * (a * m<sub>a</sub>) / 2`);
     kiIrKozep(`A=${oldal1}<sup>2</sup> + (4 * ${oldal1} * ${magassag}) / 2 cm=<span>${felszin} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/testek/gula.gif">`);
+    kiIrBal(`<img alt="Négyzet alapú szabályos gúla" src="img/testek/gula.gif">`);
   }
 }
 
@@ -1056,7 +1056,7 @@ function gombFelszin() {
     kiIrJobb(`A gömb felszíne: <span>${felszin} cm<sup>2</sup></span>`);
     kiIrKozep(`A=4 * r<sup>2</sup> * &Pi;`);
     kiIrKozep(`A=4 * ${sugar} * ${pi} cm=<span>${felszin} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/testek/gomb.png">`);
+    kiIrBal(`<img alt="Gömb" src="img/testek/gomb.png">`);
   }
 }
 
@@ -1092,7 +1092,7 @@ function egyenesKorkupFelszin() {
     kiIrJobb(`A kúp felszíne: <span>${felszin} cm<sup>2</sup></span>`);
     kiIrKozep(`A=r<sup>2</sup> * &Pi; + r * &Pi; * a`);
     kiIrKozep(`A=${sugar}<sup>2</sup> * ${pi} + ${sugar} * ${pi} * ${atfogo}cm=<span>${felszin} cm<sup>2</sup></span>`);
-    kiIrBal(`<img src="img/testek/kup.gif">`);
+    kiIrBal(`<img alt="Egyenes körkúp" src="img/testek/kup.gif">`);
   }
 }
 
