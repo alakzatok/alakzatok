@@ -2,6 +2,8 @@ nav.felso-navbar {
   display: flex;
   background: $felso-navbar-background;
   height: 50px;
+  width: 100%;
+  max-width: 100%;
 
   .home-left{
     margin: 8px 0 0 20px;

@@ -9,9 +9,6 @@
 }
 
 @media(max-width: 890px){
-    body{
-        overflow-x: hidden;
-    }
 
     .kiiratas{
         flex-wrap: wrap;
@@ -45,11 +42,12 @@
 
     .video{
         video{
-            height: 576px;
             display: none;
         }
 
         img{
+            width: 100%;
+            max-width: 100%;
             margin: 0 auto;
             display: block;
         }
