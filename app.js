@@ -22,14 +22,17 @@ function kiIrJobb(szoveg) {
   p.innerHTML = szoveg;
   kiiratasJobb.appendChild(p);
 }
-
-// Síkidomok kerülete
-
-function negyzetKerulet() {
+function eltuntetes(){
   videoDiv.style.display = "none";
   leftDiv.innerHTML = "";
   centerDiv.innerHTML = "";
   rightDiv.innerHTML = "";
+}
+
+// Síkidomok kerülete
+
+function negyzetKerulet() {
+  eltuntetes();
   let oldal = prompt("Add meg a négyzet oldalát!");
   if(isNaN(oldal)){
     videoDiv.style.display = "block";
@@ -59,10 +62,7 @@ function negyzetKerulet() {
 }
 
 function teglalapKerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a téglalap egyik oldalát!");
   let oldal2 = prompt("Add meg a téglalap másik oldalát!");
   if(isNaN(oldal1) | isNaN(oldal2)){
@@ -94,10 +94,7 @@ function teglalapKerulet() {
 }
 
 function haromszogKerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a háromszög 'a' oldalát!");
   let oldal2 = prompt("Add meg a háromszög 'b' oldalát!");
   let oldal3 = prompt("Add meg a háromszög 'c' oldalát!");
@@ -131,10 +128,7 @@ function haromszogKerulet() {
 }
 
 function rombuszKerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a rombusz oldalát!");
   if(isNaN(oldal)){
     videoDiv.style.display = "block";
@@ -164,10 +158,7 @@ function rombuszKerulet() {
 }
 
 function paralelogrammaKerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a paralelogramma egyik oldalát!");
   let oldal2 = prompt("Add meg a paralelogramma másik oldalát!");
   if(isNaN(oldal1) | isNaN(oldal2)){
@@ -199,10 +190,7 @@ function paralelogrammaKerulet() {
 }
 
 function deltoidKerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a deltoid egyik oldalát!");
   let oldal2 = prompt("Add meg a deltoid másik oldalát!");
   if(isNaN(oldal1) | isNaN(oldal2)){
@@ -234,10 +222,7 @@ function deltoidKerulet() {
 }
 
 function trapezKerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a trapéz egyik oldalát!");
   let oldal2 = prompt("Add meg a trapéz másik oldalát!");
   let oldal3 = prompt("Add meg a trapéz harmadik oldalát!");
@@ -273,10 +258,7 @@ function trapezKerulet() {
 }
 
 function hurtrapezKerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a húrtrapéz egyik alapját!");
   let oldal2 = prompt("Add meg a húrtrapéz másik alapját!");
   let oldal3 = prompt("Add meg a húrtrapéz szárát!");
@@ -311,10 +293,7 @@ function hurtrapezKerulet() {
 
 // Síkidomok területe
 function negyzetTerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a négyzet oldalát!");
   if(isNaN(oldal)){
     videoDiv.style.display = "block";
@@ -344,10 +323,7 @@ function negyzetTerulet() {
 }
 
 function teglalapTerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a téglalap egyik oldalát!");
   let oldal2 = prompt("Add meg a téglalap másik oldalát!");
   if(isNaN(oldal1) | isNaN(oldal2)){
@@ -379,10 +355,7 @@ function teglalapTerulet() {
 }
 
 function haromszogTerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a háromszög egyik oldalát!");
   let magassag = prompt("Add meg az oldalhoz tartozó magasságot!");
   if(isNaN(oldal) | isNaN(magassag)){
@@ -414,10 +387,7 @@ function haromszogTerulet() {
 }
 
 function rombuszTeruletAtlo() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let atlo1 = prompt("Add meg a rombusz egyik átlóját!");
   let atlo2 = prompt("Add meg a rombusz másik átlóját!");
   if(isNaN(atlo1) | isNaN(atlo2)){
@@ -449,10 +419,7 @@ function rombuszTeruletAtlo() {
 }
 
 function rombuszTeruletMagassag() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a rombusz egyik oldalát!");
   let magassag = prompt("Add meg az oldalhoz tartozó magasságot!");
   if(isNaN(oldal) | isNaN(magassag)){
@@ -484,10 +451,7 @@ function rombuszTeruletMagassag() {
 }
 
 function paralelogrammaTerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a rombusz egyik oldalát!");
   let magassag = prompt("Add meg az oldalhoz tartozó magasságot!");
   if(isNaN(oldal) | isNaN(magassag)){
@@ -519,10 +483,7 @@ function paralelogrammaTerulet() {
 }
 
 function deltoidTerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let atlo1 = prompt("Add meg a deltoid egyik átlóját!");
   let atlo2 = prompt("Add meg a deltoid másik átlóját!");
   if(isNaN(atlo1) | isNaN(atlo2)){
@@ -554,10 +515,7 @@ function deltoidTerulet() {
 }
 
 function trapezTerulet() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let alap1 = prompt("Add meg a trapéz egyik alapját!");
   let alap2 = prompt("Add meg a trapéz másik alapját!");
   let magassag = prompt("Add meg az alapokhoz tartozó magasságot!");
@@ -594,10 +552,7 @@ function trapezTerulet() {
 
 // Testek térfogata
 function kockaTerfogat() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a négyzet oldalát!");
   if(isNaN(oldal)){
     videoDiv.style.display = "block";
@@ -627,10 +582,7 @@ function kockaTerfogat() {
 }
 
 function teglatestTerfogat() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a téglatest oldalát!");
   let oldal2 = prompt("Add meg a másik oldalát!");
   let oldal3 = prompt("Add meg a harmadik oldalát!");
@@ -664,10 +616,7 @@ function teglatestTerfogat() {
 }
 
 function negyzetesOszlopTerfogat() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a négyzetes oszlop oldalát!");
   let magassag = prompt("Add meg a négyzetes oszlop magasságát!");
   if(isNaN(oldal) | isNaN(magassag)){
@@ -699,10 +648,7 @@ function negyzetesOszlopTerfogat() {
 }
 
 function egyenesKorhengerTerfogat() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let sugar = prompt("Add meg a henger körének a sugarát!");
   const pi = 3.14;
   let magassag = prompt("Add meg a henger magasságát!");
@@ -737,10 +683,7 @@ function egyenesKorhengerTerfogat() {
 }
 
 function negyzetAlapuSzabalyosGulaTerfogat() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a gúla négyzetének az oldalát!");
   let magassag = prompt("Add meg a gúla magasságát!");
   if (isNaN(oldal) | isNaN(magassag)) {
@@ -776,10 +719,7 @@ function negyzetAlapuSzabalyosGulaTerfogat() {
 }
 
 function gombTerfogat() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let sugar = prompt("Add meg a gömb sugarát!");
   const pi = 3.14;
   if(isNaN(sugar)){
@@ -810,10 +750,7 @@ function gombTerfogat() {
 }
 
 function egyenesKorkupTerfogat() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let sugar = prompt("Add meg a kúp körének a sugarát!");
   const pi = 3.14;
   let magassag = prompt("Add meg a kúp magasságát!");
@@ -849,10 +786,7 @@ function egyenesKorkupTerfogat() {
 
 // Testek felszíne
 function kockaFelszin() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a négyzet oldalát!");
   if(isNaN(oldal)){
     videoDiv.style.display = "block";
@@ -882,10 +816,7 @@ function kockaFelszin() {
 }
 
 function teglatestFelszin() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a téglatest egyik oldalát!");
   let oldal2 = prompt("Add meg a téglatest másik oldalát!");
   let oldal3 = prompt("Add meg a téglatest harmadik oldalát!");
@@ -919,10 +850,7 @@ function teglatestFelszin() {
 }
 
 function negyzetesOszlopFelszin() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal = prompt("Add meg a négyzetes oszlop oldalát!");
   let magassag = prompt("Add meg a négyzetes oszlop magasságát!");
   if(isNaN(oldal) | isNaN(magassag)){
@@ -954,10 +882,7 @@ function negyzetesOszlopFelszin() {
 }
 
 function egyenesKorhengerFelszin() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let sugar = prompt("Add meg a henger körének a sugarát!");
   let magassag = prompt("Add meg a henger magasságát!");
   const pi = 3.14;
@@ -990,10 +915,7 @@ function egyenesKorhengerFelszin() {
 }
 
 function negyzetAlapuSzabalyosGulaFelszin() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let oldal1 = prompt("Add meg a gúla négyzetének az oldalát!");
   let magassag = prompt(
     "Add meg az alaphoz tartozó magasságot!"
@@ -1027,10 +949,7 @@ function negyzetAlapuSzabalyosGulaFelszin() {
 }
 
 function gombFelszin() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let sugar = prompt("Add meg a gömb sugarát!");
   const pi = 3.14;
   if(isNaN(sugar)){
@@ -1061,10 +980,7 @@ function gombFelszin() {
 }
 
 function egyenesKorkupFelszin() {
-  videoDiv.style.display = "none";
-  leftDiv.innerHTML = "";
-  centerDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+  eltuntetes();
   let atfogo = prompt("Add meg a kúp 'a' oldalát!");
   let sugar = prompt("Add meg a kúp körének a sugarát!");
   const pi = 3.14;
